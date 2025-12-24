@@ -1,1 +1,1 @@
-This is an active research repository. Currently implementing the Hessian Spectrum visualization for Quantized ResNets. Preliminary results expected Jan 2026.
+![plot](https://github.com/S-Sairam/bit-collapse-geometry/blob/main/bit_collapse_final.png)
