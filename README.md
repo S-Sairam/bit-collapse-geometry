@@ -16,11 +16,11 @@ Using a custom Hessian Spectrum Visualizer, we demonstrate that standard QAT usi
 ### 1. The "Coin in the Well" Paradox
 Our Hessian analysis revealed a counter-intuitive phenomenon. Standard Int8 models often exhibit *lower* top eigenvalues ($\lambda_{max}$) than FP32 baselines, suggesting flatness. However, landscape visualization reveals they are actually trapped in **Narrow Wells**.
 *   **Implication:** The Hessian Eigenvalue metric alone has a "blind spot" for basin width in discrete manifolds.
-*   **Visual Proof:** As seen in Fig 1, the **Red Curve** (Int8 SGD) hits a high-loss wall immediately upon perturbation ($\sigma \approx 0.15$), confirming brittleness.
+*   **Visual Proof:** As seen in Fig 1, the **Red Curve** (Int8 SGD) hits a high-loss wall immediately upon perturbation, confirming brittleness.
 
 ### 2. Geometric Restoration via SAM
 Applying SAM during the quantization phase prevents the optimizer from "digging" into these narrow wells.
-*   **Result:** The **Green Curve** (Int8 SAM) maintains a wide basin ($\sigma \approx 0.25+$), matching the topological robustness of the Full-Precision model.
+*   **Result:** The **Green Curve** (Int8 SAM) maintains a wide basin, matching the topological robustness of the Full-Precision model.
 
 ## 🛠️ Methodology & Stack
 
